@@ -1,0 +1,17 @@
+# secrets - never commit
+figma.token
+
+# deps / build
+node_modules/
+.next/
+out/
+build/
+dist/
+.vercel/
+
+# env
+.env*.local
+
+# misc
+.DS_Store
+*.log

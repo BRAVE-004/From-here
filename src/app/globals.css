@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand: #8a00d4;
+  --color-brand-bright: #a81fff;
+  --color-brand-deep: #4d146d;
+  --color-night: #07111f;
+  --color-panel: #0b1019;
+}
+
+.bg-panel {
+  background-color: var(--color-panel);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-night);
+  color: #ffffff;
+}
+
+::selection {
+  background-color: var(--color-brand);
+  color: #ffffff;
+}
+
+@keyframes fh-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes fh-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes fh-twinkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fh-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.anim-float {
+  animation: fh-float 8s ease-in-out infinite;
+}
+
+.anim-twinkle {
+  animation: fh-twinkle 4.5s ease-in-out infinite;
+}
+
+.animate-marquee {
+  animation: fh-marquee 35s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-float,
+  .anim-twinkle,
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
