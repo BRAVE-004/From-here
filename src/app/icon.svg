@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="70%" r="65%">
+      <stop offset="0%" stop-color="#8a00d4" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#8a00d4" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- night background, rounded like the site panels -->
+  <rect width="64" height="64" rx="14" fill="#07111f" />
+  <rect width="64" height="64" rx="14" fill="url(#glow)" />
+  <rect x="0.5" y="0.5" width="63" height="63" rx="13.5" fill="none" stroke="#ffffff" stroke-opacity="0.12" />
+
+  <!-- FROM -->
+  <text x="32" y="25" text-anchor="middle"
+        font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" font-weight="900" letter-spacing="1.5"
+        fill="#ffffff">FROM</text>
+
+  <!-- HERE in the brand pill -->
+  <rect x="7" y="32" width="50" height="22" rx="11"
+        fill="none" stroke="#a81fff" stroke-width="2" stroke-opacity="0.85" />
+  <text x="32" y="48" text-anchor="middle"
+        font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" font-weight="900" letter-spacing="1"
+        fill="#ffffff">HERE</text>
+</svg>
