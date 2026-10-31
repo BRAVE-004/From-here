@@ -1,16 +1,16 @@
 # secrets - never commit
 figma.token
+.dev.vars
 
 # deps / build
 node_modules/
 .next/
+.open-next/
 out/
 build/
 dist/
 .vercel/
-
-# env
-.env*.local
+.wrangler/
 
 # misc
 .DS_Store
