@@ -131,7 +131,12 @@ export default function Footer() {
 
           <div className="flex flex-wrap items-center justify-center gap-2.5 text-[12px] text-white/50">
             <span className="tracking-[0.14em] uppercase font-medium">Designed &amp; Developed by</span>
-            <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/25 bg-blue-500/5 px-3 py-1 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:bg-blue-500/10 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]">
+            <a
+              href="https://fortis-stack.pages.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-blue-500/25 bg-blue-500/5 px-3 py-1 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:bg-blue-500/10 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]"
+            >
               <Image
                 src="/images/fortis-stack-transparent.png"
                 alt="Fortis-Stack Ltd Logo"
@@ -142,7 +147,7 @@ export default function Footer() {
               <span className="font-display font-bold uppercase tracking-[0.08em] text-white">
                 Fortis-Stack Ltd
               </span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
