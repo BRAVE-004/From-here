@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="here"
-      className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-night"
+      className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-night scroll-mt-24"
     >
       <Image
         src="/images/hero.jpg"
@@ -30,7 +30,7 @@ export default function Hero() {
 
       <SiteHeader />
 
-      <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-6 pb-16 pt-[clamp(8.5rem,20.4vh,14rem)] sm:px-10 sm:pb-20 lg:px-[5.8vw] lg:pb-24">
+      <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-6 pb-6 sm:pb-8 lg:pb-10 pt-[clamp(8.5rem,20.4vh,14rem)] sm:px-10 lg:px-[5.8vw]">
         <p className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/75 sm:text-[13px]">
           A conference for what comes next
         </p>

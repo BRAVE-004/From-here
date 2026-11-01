@@ -2,13 +2,21 @@
 
 import { useEffect, useState } from "react";
 
-const links: { label: string; href: string; active?: boolean }[] = [
+const links: { label: string; href: string }[] = [
   { label: "Offer", href: "#offer" },
   { label: "About", href: "#about" },
-  { label: "HERE", href: "#here", active: true },
+  { label: "HERE", href: "#here" },
   { label: "Vision", href: "#vision" },
   { label: "Mission", href: "#mission" },
 ];
+
+const SECTION_ID: Record<string, string> = {
+  Offer: "offer",
+  About: "about",
+  HERE: "here",
+  Vision: "vision",
+  Mission: "mission",
+};
 
 function CalendarIcon() {
   return (
@@ -65,6 +73,7 @@ function Logo() {
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("here");
 
   useEffect(() => {
     if (!open) return;
@@ -75,8 +84,26 @@ export default function SiteHeader() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const intersecting = entries.filter((e) => e.isIntersecting);
+        if (intersecting.length > 0) {
+          intersecting.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+          setActiveSection(intersecting[0].target.id);
+        }
+      },
+      { threshold: 0.45 }
+    );
+
+    document.querySelectorAll("section[id]").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
+  const isActive = (label: string) => SECTION_ID[label] === activeSection;
+
   return (
-    <header className="absolute inset-x-0 top-0 z-30">
+    <header className="fixed inset-x-0 top-0 z-30 bg-night/85 backdrop-blur-md border-b border-white/10">
       <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-6 px-6 pb-4 pt-7 sm:px-10 sm:pt-8 lg:px-[5.8vw] lg:pb-5 lg:pt-[3.4vw]">
         <Logo />
 
@@ -87,14 +114,14 @@ export default function SiteHeader() {
             <a
               key={link.label}
               href={link.href}
-              aria-current={link.active ? "page" : undefined}
+              aria-current={isActive(link.label) ? "page" : undefined}
               className={
                 "relative py-2 transition-colors hover:text-white " +
-                (link.active ? "font-semibold text-white" : "")
+                (isActive(link.label) ? "font-semibold text-white" : "")
               }
             >
               {link.label}
-              {link.active ? (
+              {isActive(link.label) ? (
                 <span
                   aria-hidden="true"
                   className="absolute -bottom-1 left-1/2 h-[7px] w-[7px] -translate-x-1/2 rounded-full bg-brand shadow-[0_0_12px_rgba(168,31,255,0.9)]"
@@ -155,13 +182,19 @@ export default function SiteHeader() {
               key={link.label}
               href={link.href}
               onClick={() => setOpen(false)}
-              aria-current={link.active ? "page" : undefined}
+              aria-current={isActive(link.label) ? "page" : undefined}
               className={
                 "rounded-xl px-4 py-3 text-base transition-colors hover:bg-white/5 " +
-                (link.active ? "font-semibold text-white" : "text-white/80")
+                (isActive(link.label) ? "font-semibold text-white" : "text-white/80")
               }
             >
               {link.label}
+              {isActive(link.label) ? (
+                <span
+                  aria-hidden="true"
+                  className="ml-2 h-2.5 w-2.5 rounded-full bg-brand shadow-[0_0_8px_rgba(168,31,255,0.9)]"
+                />
+              ) : null}
             </a>
           ))}
           <div className="mt-2 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-white/10 px-4 pt-4 text-sm text-white/80">
