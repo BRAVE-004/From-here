@@ -85,19 +85,58 @@ export default function SiteHeader() {
   }, [open]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const intersecting = entries.filter((e) => e.isIntersecting);
-        if (intersecting.length > 0) {
-          intersecting.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-          setActiveSection(intersecting[0].target.id);
-        }
-      },
-      { threshold: 0.45 }
-    );
+    // Scroll-position spy. IntersectionObserver ratios are unreliable here
+    // because most sections are taller than the viewport, so a section can
+    // never reach a high intersection ratio.
+    const ids = new Set(Object.values(SECTION_ID));
+    const sections = Array.from(
+      document.querySelectorAll<HTMLElement>("section[id]")
+    ).filter((el) => ids.has(el.id));
 
-    document.querySelectorAll("section[id]").forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+    if (sections.length === 0) return;
+
+    let frame = 0;
+
+    const update = () => {
+      frame = 0;
+
+      const pageBottom =
+        document.documentElement.scrollHeight - window.innerHeight - 2;
+
+      // A section becomes active once its top passes this line, which sits
+      // just under the fixed header. Must stay below the sections' 112px
+      // scroll-margin so a section jumped to via the nav is active at once.
+      const activationLine = Math.min(152, window.innerHeight * 0.6);
+      let current = sections[0].id;
+
+      if (window.scrollY >= pageBottom) {
+        // At the very bottom, the last section is the one in view.
+        current = sections[sections.length - 1].id;
+      } else {
+        for (const section of sections) {
+          if (section.getBoundingClientRect().top <= activationLine) {
+            current = section.id;
+          }
+        }
+      }
+
+      setActiveSection(current);
+    };
+
+    const onScroll = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
   }, []);
 
   const isActive = (label: string) => SECTION_ID[label] === activeSection;
@@ -192,7 +231,7 @@ export default function SiteHeader() {
               {isActive(link.label) ? (
                 <span
                   aria-hidden="true"
-                  className="ml-2 h-2.5 w-2.5 rounded-full bg-brand shadow-[0_0_8px_rgba(168,31,255,0.9)]"
+                  className="ml-2 inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-brand align-middle shadow-[0_0_8px_rgba(168,31,255,0.9)]"
                 />
               ) : null}
             </a>

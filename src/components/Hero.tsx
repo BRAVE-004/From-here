@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="here"
-      className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-night scroll-mt-24"
+      className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-night scroll-mt-28"
     >
       <Image
         src="/images/hero.jpg"

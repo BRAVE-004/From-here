@@ -244,7 +244,7 @@ export default function WhatIsPossible() {
   return (
     <section
       id="offer"
-      className="scroll-mt-16 overflow-hidden bg-night"
+      className="scroll-mt-28 overflow-hidden bg-night"
       aria-labelledby="wip-heading"
     >
       {/* ── section header — same eyebrow rhythm as About / Vision / Mission ── */}

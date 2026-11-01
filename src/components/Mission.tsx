@@ -43,7 +43,7 @@ export default function Mission() {
   return (
     <section
       id="mission"
-      className="relative isolate overflow-hidden bg-night"
+      className="relative isolate scroll-mt-28 overflow-hidden bg-night"
       aria-labelledby="mission-heading"
     >
       {/* ambient glow */}

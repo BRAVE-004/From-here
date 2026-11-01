@@ -70,7 +70,7 @@ export default function Vision() {
   return (
     <section
       id="vision"
-      className="relative isolate overflow-hidden bg-night"
+      className="relative isolate scroll-mt-28 overflow-hidden bg-night"
       aria-labelledby="vision-heading"
     >
       {/* ambient glow */}

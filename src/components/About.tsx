@@ -31,7 +31,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative scroll-mt-16 overflow-hidden bg-night"
+      className="relative scroll-mt-28 overflow-hidden bg-night"
       aria-labelledby="about-heading"
     >
       {/* seamless bleed from Hero */}
