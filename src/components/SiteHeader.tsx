@@ -103,7 +103,7 @@ export default function SiteHeader() {
   const isActive = (label: string) => SECTION_ID[label] === activeSection;
 
   return (
-    <header className="fixed inset-x-0 top-0 z-30 bg-night/85 backdrop-blur-md border-b border-white/10">
+    <header className="fixed inset-x-0 top-0 z-50 bg-night/85 backdrop-blur-md border-b border-white/10">
       <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-6 px-6 pb-4 pt-7 sm:px-10 sm:pt-8 lg:px-[5.8vw] lg:pb-5 lg:pt-[3.4vw]">
         <Logo />
 

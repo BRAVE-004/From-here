@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SiteHeader from "./SiteHeader";
 
 const pillars = ["Discover", "Build", "Connect", "Grow"];
 
@@ -27,8 +26,6 @@ export default function Hero() {
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-gradient-to-r from-[#040d1c]/90 via-[#040d1c]/30 to-transparent"
       />
-
-      <SiteHeader />
 
       <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-6 pb-6 sm:pb-8 lg:pb-10 pt-[clamp(8.5rem,20.4vh,14rem)] sm:px-10 lg:px-[5.8vw]">
         <p className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/75 sm:text-[13px]">
