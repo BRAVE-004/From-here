@@ -27,7 +27,7 @@ export default function Hero() {
         className="absolute inset-0 -z-10 bg-gradient-to-r from-[#040d1c]/90 via-[#040d1c]/30 to-transparent"
       />
 
-      <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-6 pb-6 sm:pb-8 lg:pb-10 pt-[clamp(8.5rem,20.4vh,14rem)] sm:px-10 lg:px-[5.8vw]">
+      <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-6 pb-5 sm:pb-6 lg:pb-8 pt-[clamp(8.5rem,20.4vh,14rem)] sm:px-10 lg:px-[5.8vw]">
         <p className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/75 sm:text-[13px]">
           A conference for what comes next
         </p>
@@ -51,10 +51,12 @@ export default function Hero() {
         </p>
 
         <a
-          href="#about"
+          href="https://www.afrikets.xyz/events/6ae75ee1eff639ce26904aaa"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group mt-6 block w-fit sm:mt-11 sm:inline-flex sm:w-fit sm:items-center sm:block sm:gap-4 bg-brand px-7 py-[1.1rem] text-[13px] font-bold uppercase tracking-[0.16em] text-white sm:px-9 sm:py-[1.65rem] sm:text-sm transition-colors duration-200 hover:bg-brand-bright focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:hover:bg-brand-bright"
         >
-          Start From Here
+          Secure Your Seat
           <svg
             aria-hidden="true"
             viewBox="0 0 24 24"
@@ -69,7 +71,7 @@ export default function Hero() {
           </svg>
         </a>
 
-        <ul className="mt-auto flex flex-wrap items-center justify-center gap-3 py-10 sm:justify-start sm:gap-x-12 sm:pt-0">
+        <ul className="mt-auto flex flex-wrap items-center justify-center gap-3 pt-10 pb-0 sm:justify-start sm:gap-x-12 sm:pt-0">
           {pillars.map((pillar) => (
             <li key={pillar} className="flex items-center gap-2 text-[14px] text-white/90 sm:text-[15px] sm:gap-x-2">
               <span aria-hidden="true" className="font-light text-white/70">
