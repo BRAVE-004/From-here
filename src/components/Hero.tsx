@@ -9,7 +9,7 @@ export default function Hero() {
       className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-night scroll-mt-28"
     >
       <Image
-        src="/images/hero.jpg"
+        src="/images/hero.webp"
         alt="Four young people on a rocky outcrop overlooking a city skyline at sunrise"
         fill
         priority
@@ -27,19 +27,19 @@ export default function Hero() {
         className="absolute inset-0 -z-10 bg-gradient-to-r from-[#040d1c]/90 via-[#040d1c]/30 to-transparent"
       />
 
-      <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-6 pb-8 sm:pb-10 lg:pb-12 pt-[clamp(8.5rem,20.4vh,14rem)] sm:px-10 lg:px-[5.8vw]">
+      <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-6 pb-8 sm:pb-10 lg:pb-12 pt-[clamp(6.5rem,16.5vh,9rem)] sm:pt-[clamp(8.5rem,20.4vh,14rem)] sm:px-10 lg:px-[5.8vw]">
         <p className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/75 sm:text-[13px]">
           A conference for what comes next
         </p>
 
         <h1 className="mt-6 font-display font-extrabold uppercase text-white [font-stretch:79%] sm:mt-9">
-          <span className="block text-[clamp(2.4rem,9vw,4.6rem)] leading-[0.92] tracking-[-0.035em] sm:text-[clamp(2.6rem,7.25vw,7.3rem)]">
+          <span className="block text-[clamp(2rem,7.2vw,4rem)] leading-[0.92] tracking-[-0.035em] sm:text-[clamp(2.6rem,7.25vw,7.3rem)]">
             Your Next
           </span>
-          <span className="relative mt-1 block w-fit text-[clamp(3rem,12vw,5.6rem)] leading-[0.92] tracking-[-0.035em] sm:text-[clamp(3.4rem,9.6vw,9.6rem)]">
+          <span className="relative mt-1 block w-fit text-[clamp(2.4rem,9vw,5rem)] leading-[0.92] tracking-[-0.035em] sm:text-[clamp(3.4rem,9.6vw,9.6rem)]">
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute left-[99%] top-[64%] -z-10 h-[clamp(120px,14vw,180px)] w-[clamp(120px,14vw,180px)] max-w-[82.5%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_35%_30%,#c48bff_0%,#9b3fe0_40%,#a63fd0_66%,#d179a0_92%)] opacity-90 mix-blend-screen blur-[1px] sm:h-[clamp(150px,17.5vw,280px)] sm:w-[clamp(150px,17.5vw,280px)] sm:max-w-none"
+              className="pointer-events-none absolute left-[100%] top-[0%] -z-10 h-[48px] w-[48px] max-w-[82.5%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_35%_30%,#c48bff_0%,#9b3fe0_40%,#a63fd0_66%,#d179a0_92%)] opacity-90 mix-blend-screen blur-[1px] sm:left-[100%] sm:top-[-36%] sm:h-[clamp(80px,10vw,140px)] sm:w-[clamp(80px,10vw,140px)] lg:left-[99%] lg:top-[64%] lg:h-[clamp(150px,16vw,260px)] lg:w-[clamp(150px,16vw,260px)] lg:max-w-none"
             />
             Begins Here
           </span>

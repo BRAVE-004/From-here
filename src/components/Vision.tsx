@@ -128,7 +128,7 @@ export default function Vision() {
           <div className="relative">
             <div className="relative aspect-[4/5] w-full overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(138,0,212,0.18)]">
               <Image
-                src="/images/vision-spiral.png"
+                src="/images/vision-spiral.webp"
                 alt="A spiralling funnel of newspaper pages, with a lone figure holding a pink umbrella at its centre"
                 fill
                 sizes="(min-width: 1024px) 42vw, 92vw"

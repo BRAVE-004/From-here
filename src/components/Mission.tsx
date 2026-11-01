@@ -70,7 +70,7 @@ export default function Mission() {
           {/* LEFT — image */}
           <div className="relative aspect-[16/9] w-full overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(138,0,212,0.14)]">
             <Image
-              src="/images/mission-sky.jpg"
+              src="/images/mission-sky.webp"
               alt="Four people sitting on a rocky outcrop overlooking a city skyline at sunset"
               fill
               sizes="(min-width: 1024px) 48vw, 92vw"

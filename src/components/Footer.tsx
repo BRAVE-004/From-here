@@ -138,7 +138,7 @@ export default function Footer() {
               className="inline-flex items-center gap-2.5 rounded-full border border-blue-500/25 bg-blue-500/5 px-4 py-2 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:bg-blue-500/10 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]"
             >
               <Image
-                src="/images/fortis-stack-transparent.png"
+                src="/images/fortis-stack-transparent.webp"
                 alt="Fortis-Stack Ltd Logo"
                 width={32}
                 height={32}
