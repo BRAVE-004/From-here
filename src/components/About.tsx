@@ -228,7 +228,9 @@ export default function About() {
           </p>
 
           <a
-            href="#offer"
+            href="https://www.afrikets.xyz/events/6ae75ee1eff639ce26904aaa"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex w-fit shrink-0 items-center gap-4 bg-brand px-7 py-[1.1rem] text-[13px] font-bold uppercase tracking-[0.16em] text-white transition-colors duration-200 hover:bg-brand-bright focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-9 sm:py-[1.5rem] sm:text-sm"
           >
             Explore the experience
