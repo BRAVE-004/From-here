@@ -14,7 +14,7 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="-z-20 object-cover object-[73%_52%] pin-b"
+        className="-z-20 translate-y-24 object-cover object-[73%_52%] pin-b sm:translate-y-0"
       />
 
       {/* Legibility scrims */}
@@ -27,49 +27,52 @@ export default function Hero() {
         className="absolute inset-0 -z-10 bg-gradient-to-r from-[#040d1c]/90 via-[#040d1c]/30 to-transparent"
       />
 
-      <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-6 pb-8 sm:pb-10 lg:pb-12 pt-[clamp(6.5rem,16.5vh,9rem)] sm:pt-[clamp(8.5rem,20.4vh,14rem)] sm:px-10 lg:px-[5.8vw]">
-        <p className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/75 sm:text-[13px]">
-          A conference for what comes next
-        </p>
+      <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-6 pb-8 sm:px-10 sm:pb-10 sm:pt-[clamp(8.5rem,20.4vh,14rem)] lg:px-[5.8vw] lg:pb-12">
+        {/* mobile: vertically centred in the space above the pillars */}
+        <div className="flex flex-1 flex-col justify-center pt-20 sm:flex-none sm:justify-start sm:pt-0">
+          <p className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/75 sm:text-[13px]">
+            A conference for what comes next
+          </p>
 
-        <h1 className="mt-6 font-display font-extrabold uppercase text-white [font-stretch:79%] sm:mt-9">
-          <span className="block text-[clamp(2rem,7.2vw,4rem)] leading-[0.92] tracking-[-0.035em] sm:text-[clamp(2.6rem,7.25vw,7.3rem)]">
-            Your Next
-          </span>
-          <span className="relative mt-1 block w-fit text-[clamp(2.4rem,9vw,5rem)] leading-[0.92] tracking-[-0.035em] sm:text-[clamp(3.4rem,9.6vw,9.6rem)]">
-            <span
-              aria-hidden="true"
-              className="pointer-events-none absolute left-[100%] top-[0%] -z-10 h-[48px] w-[48px] max-w-[82.5%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_35%_30%,#c48bff_0%,#9b3fe0_40%,#a63fd0_66%,#d179a0_92%)] opacity-90 mix-blend-screen blur-[1px] sm:left-[100%] sm:top-[-36%] sm:h-[clamp(80px,10vw,140px)] sm:w-[clamp(80px,10vw,140px)] lg:left-[99%] lg:top-[64%] lg:h-[clamp(150px,16vw,260px)] lg:w-[clamp(150px,16vw,260px)] lg:max-w-none"
-            />
-            Begins Here
-          </span>
-        </h1>
+          <h1 className="mt-6 font-display font-extrabold uppercase text-white [font-stretch:79%] sm:mt-9">
+            <span className="block text-[clamp(2rem,7.2vw,4rem)] leading-[0.92] tracking-[-0.035em] sm:text-[clamp(2.6rem,7.25vw,7.3rem)]">
+              Your Next
+            </span>
+            <span className="relative mt-1 block w-fit text-[clamp(2.4rem,9vw,5rem)] leading-[0.92] tracking-[-0.035em] sm:text-[clamp(3.4rem,9.6vw,9.6rem)]">
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute left-[100%] top-[0%] -z-10 h-[56px] w-[56px] max-w-[82.5%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_35%_30%,#c48bff_0%,#9b3fe0_40%,#a63fd0_66%,#d179a0_92%)] opacity-90 mix-blend-screen blur-[1px] sm:left-[100%] sm:top-[-36%] sm:h-[clamp(80px,10vw,140px)] sm:w-[clamp(80px,10vw,140px)] lg:left-[99%] lg:top-[64%] lg:h-[clamp(150px,16vw,260px)] lg:w-[clamp(150px,16vw,260px)] lg:max-w-none"
+              />
+              Begins Here
+            </span>
+          </h1>
 
-        <p className="mt-3 max-w-[33rem] text-[clamp(1rem,3.4vw,1.15rem)] leading-[1.35] text-white/95 sm:text-[clamp(1.05rem,1.55vw,1.55rem)]">
-          Find your direction. Build your capabilities. Connect with the people
-          and opportunities that move you forward
-        </p>
+          <p className="mt-3 max-w-[33rem] text-[clamp(1rem,3.4vw,1.15rem)] leading-[1.35] text-white/95 sm:text-[clamp(1.05rem,1.55vw,1.55rem)]">
+            Find your direction. Build your capabilities. Connect with the people
+            and opportunities that move you forward
+          </p>
 
-        <a
-          href="https://www.afrikets.xyz/events/6ae75ee1eff639ce26904aaa"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group mt-6 inline-flex w-fit items-center gap-3 bg-brand px-7 py-[1.1rem] text-[13px] font-bold uppercase tracking-[0.16em] text-white transition-colors duration-200 hover:bg-brand-bright focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:mt-11 sm:gap-4 sm:px-9 sm:py-[1.65rem] sm:text-sm sm:hover:bg-brand-bright"
-        >
-          Secure Your Seat
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 sm:h-5 sm:w-5"
+          <a
+            href="https://www.afrikets.xyz/events/6ae75ee1eff639ce26904aaa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-6 inline-flex w-fit items-center gap-3 bg-brand px-7 py-[1.1rem] text-[13px] font-bold uppercase tracking-[0.16em] text-white transition-colors duration-200 hover:bg-brand-bright focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:mt-11 sm:gap-4 sm:px-9 sm:py-[1.65rem] sm:text-sm sm:hover:bg-brand-bright"
           >
-            <path d="M7 17 17 7M8 7h9v9" />
-          </svg>
-        </a>
+            Secure Your Seat
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 sm:h-5 sm:w-5"
+            >
+              <path d="M7 17 17 7M8 7h9v9" />
+            </svg>
+          </a>
+        </div>
 
         <ul className="mt-auto flex flex-wrap items-center justify-center gap-3 pt-12 pb-0 sm:justify-start sm:gap-x-12 sm:pt-16">
           {pillars.map((pillar) => (
