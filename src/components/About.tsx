@@ -108,9 +108,13 @@ export default function About() {
               </p>
               <p className="text-[clamp(0.85rem,2.5vw,1.05rem)] leading-[1.7] text-white/45 sm:text-[clamp(0.9rem,1.1vw,1.05rem)]">
                 It brings together students, innovators, founders, tech
-                professionals, mentors, and community leaders to exchange
-                ideas, build meaningful connections, and turn potential into
-                progress.
+                professionals, mentors, and community leaders from across
+                Nigeria and Africa to exchange ideas, build meaningful
+                connections, and turn potential into progress.
+              </p>
+              <p className="text-[clamp(0.85rem,2.5vw,1.05rem)] leading-[1.7] text-white/45 sm:text-[clamp(0.9rem,1.1vw,1.05rem)]">
+                The From Here Africa conference takes place on 5 December 2026
+                at the COOU Uli Campus in Uli, Anambra, Nigeria.
               </p>
             </div>
 

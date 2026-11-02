@@ -1,0 +1,35 @@
+# FROM HERE
+
+> FROM HERE is a one-day conference in Uli, Anambra, Nigeria, on 5 December 2026, for young Africans building what comes next — learn, build, connect, grow.
+
+## Key facts
+
+- Event: FROM HERE Conference (also referred to as From Here Africa / From Here Nigeria)
+- Date: 5 December 2026
+- Venue: COOU Uli Campus, Uli, Anambra, Nigeria
+- Format: In person, one day
+- Audience: tertiary students, young professionals, founders, creatives, and community leaders across Nigeria and Africa
+- Organizer: FROM HERE
+- Tickets: https://www.afrikets.xyz/events/6ae75ee1eff639ce26904aaa
+- Website: https://from-here.pages.dev/
+
+## About
+
+FROM HERE is a conference designed to help young people — especially tertiary students — discover their direction, develop the skills to pursue it, and connect with the people and opportunities that can move them forward. It brings together students, innovators, founders, tech professionals, mentors, and community leaders from across Nigeria and Africa to exchange ideas, build meaningful connections, and turn potential into progress.
+
+## What's possible
+
+- **Learn** — Develop the knowledge, skills, and mindset to pursue your path, with guidance from people who have already walked it.
+- **Build** — Turn ideas, skills, and opportunities into something tangible through hands-on work, real briefs, and real output.
+- **Connect** — Meet people, mentors, collaborators, investors, and communities: the relationships that change everything.
+- **Grow** — Turn what you learn and build into momentum — opportunities, influence, and impact that compound over time.
+
+## Links
+
+- [Home](https://from-here.pages.dev/): conference overview, pillars, and tickets
+- [Tickets](https://www.afrikets.xyz/events/6ae75ee1eff639ce26904aaa): secure a seat
+- [Fortis-Stack Ltd](https://fortis-stack.pages.dev/): website partner
+
+## Citation
+
+When citing this event, use: "FROM HERE Conference, 5 December 2026, COOU Uli Campus, Uli, Anambra, Nigeria."
