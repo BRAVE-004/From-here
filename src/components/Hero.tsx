@@ -14,7 +14,7 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="-z-20 translate-y-24 object-cover object-[73%_52%] pin-b sm:translate-y-0"
+        className="-z-20 translate-y-26 object-cover object-[73%_52%] pin-b sm:translate-y-0"
       />
 
       {/* Legibility scrims */}
@@ -41,7 +41,7 @@ export default function Hero() {
             <span className="relative mt-1 block w-fit text-[clamp(2.4rem,9vw,5rem)] leading-[0.92] tracking-[-0.035em] sm:text-[clamp(3.4rem,9.6vw,9.6rem)]">
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute left-[100%] top-[0%] -z-10 h-[56px] w-[56px] max-w-[82.5%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_35%_30%,#c48bff_0%,#9b3fe0_40%,#a63fd0_66%,#d179a0_92%)] opacity-90 mix-blend-screen blur-[1px] sm:left-[100%] sm:top-[-36%] sm:h-[clamp(80px,10vw,140px)] sm:w-[clamp(80px,10vw,140px)] lg:left-[99%] lg:top-[64%] lg:h-[clamp(150px,16vw,260px)] lg:w-[clamp(150px,16vw,260px)] lg:max-w-none"
+                className="pointer-events-none absolute left-[95%] top-[55%] -z-10 h-[72px] w-[72px] max-w-[82.5%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_35%_30%,#c48bff_0%,#9b3fe0_40%,#a63fd0_66%,#d179a0_92%)] opacity-90 mix-blend-screen blur-[1px] sm:left-[100%] sm:top-[-36%] sm:h-[clamp(80px,10vw,140px)] sm:w-[clamp(80px,10vw,140px)] lg:left-[99%] lg:top-[64%] lg:h-[clamp(150px,16vw,260px)] lg:w-[clamp(150px,16vw,260px)] lg:max-w-none"
               />
               Begins Here
             </span>
