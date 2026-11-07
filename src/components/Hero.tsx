@@ -13,6 +13,7 @@ export default function Hero() {
         alt="Four young people on a rocky outcrop overlooking a city skyline at sunrise"
         fill
         priority
+        fetchPriority="high"
         sizes="100vw"
         className="-z-20 translate-y-26 object-cover object-[73%_52%] pin-b sm:translate-y-0"
       />
