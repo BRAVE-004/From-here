@@ -27,7 +27,7 @@ const pillars = [
     index: "02",
     title: "Build Capabilities",
     description:
-      "Gain the practical skills the 21st century rewards — across tech and AI, entrepreneurship, leadership, and wellbeing.",
+      "Gain the practical skills the 21st century rewards, across tech and AI, entrepreneurship, leadership, and wellbeing.",
     points: [
       "Skills masterclasses",
       "Hands-on sessions",
@@ -91,7 +91,7 @@ export default function Vision() {
         <div className="mb-10 flex items-center gap-5 sm:mb-16">
           <div aria-hidden="true" className="h-px flex-1 bg-gradient-to-r from-white/[0.07] to-transparent" />
           <p className="shrink-0 text-[11px] font-medium uppercase tracking-[0.28em] text-white/35">
-            Vision — Where we are going
+            Vision · Where we are going
           </p>
           <div aria-hidden="true" className="h-px flex-1 bg-gradient-to-l from-white/[0.07] to-transparent" />
         </div>

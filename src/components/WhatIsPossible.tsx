@@ -16,7 +16,7 @@ type PossibleCard = {
 const cards: PossibleCard[] = [
   {    key: "learn",
     title: "Learn",
-    description: "Develop the knowledge, skills, and mindset to pursue your path — with guidance from people who have already walked it.",
+    description: "Develop the knowledge, skills, and mindset to pursue your path, with guidance from people who have already walked it.",
     accent: "#4778D5",
     image: "/images/offer-learn.webp",
     imageAlt: "A person bending to pull back the sky, revealing rolling green hills beneath",
@@ -43,7 +43,7 @@ const cards: PossibleCard[] = [
   {
     key: "grow",
     title: "Grow",
-    description: "Turn what you learn and build into momentum — opportunities, influence, and impact that compound over time.",
+    description: "Turn what you learn and build into momentum: opportunities, influence, and impact that compound over time.",
     accent: "#F59E0B",
     image: "/images/offer-grow.webp",
     imageAlt: "People ascending a dramatic spiral staircase, black and white",
@@ -252,8 +252,8 @@ export default function WhatIsPossible() {
         {/* rule + label */}
         <div className="mb-14 flex items-center gap-5">
           <div aria-hidden="true" className="h-px flex-1 bg-gradient-to-r from-white/[0.07] to-transparent" />
-          <p className="shrink-0 text-[11px] font-medium uppercase tracking-[0.28em] text-white/35">
-            Offer — What&apos;s possible
+          <p className="shrink-0 text-[11px] font-medium uppercase tracking-[0.28em] text-white/50">
+            Offer · What&apos;s possible
           </p>
           <div aria-hidden="true" className="h-px flex-1 bg-gradient-to-l from-white/[0.07] to-transparent" />
         </div>

@@ -4,7 +4,7 @@ const missionCards = [
   {
     title: "Empower Youth",
     description:
-      "Give every young person the tools, knowledge, and confidence to define their own path — regardless of background or resources.",
+      "Give every young person the tools, knowledge, and confidence to define their own path, regardless of background or resources.",
     accent: "#4778D5",
     points: [
       "Free access for all students",
@@ -59,7 +59,7 @@ export default function Mission() {
         <div className="mb-10 flex items-center gap-5 sm:mb-16">
           <div aria-hidden="true" className="h-px flex-1 bg-gradient-to-r from-white/[0.07] to-transparent" />
           <p className="shrink-0 text-[11px] font-medium uppercase tracking-[0.28em] text-white/35">
-            Mission — What we&apos;re here to do
+            Mission · What we&apos;re here to do
           </p>
           <div aria-hidden="true" className="h-px flex-1 bg-gradient-to-l from-white/[0.07] to-transparent" />
         </div>

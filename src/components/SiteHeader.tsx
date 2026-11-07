@@ -58,7 +58,7 @@ function Logo() {
   return (
     <a
       href="#here"
-      aria-label="FROM HERE — back to top"
+      aria-label="FROM HERE, back to top"
       className="group flex shrink-0 flex-col items-start"
     >
       <span className="font-display text-[21px] font-extrabold uppercase leading-none tracking-[-0.02em]">

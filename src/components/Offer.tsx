@@ -99,7 +99,7 @@ const offerCards = [
   {
     title: "Hands-On Workshops",
     description:
-      "Small-group sessions where you build real things — code, designs, business models, pitches — with expert guidance.",
+      "Small-group sessions where you build real things (code, designs, business models, pitches) with expert guidance.",
     icon: (
       <>
         <path d="M12 2L2 7l10 5 10-5-10-5z" />
@@ -137,7 +137,7 @@ const offerCards = [
   {
     title: "Networking Events",
     description:
-      "Designed collisions — from structured speed-networking to casual mixers — that spark real relationships.",
+      "Designed collisions, from structured speed-networking to casual mixers, that spark real relationships.",
     icon: (
       <>
         <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />

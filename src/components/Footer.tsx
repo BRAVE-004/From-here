@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Community Callout Banner */}
         <div className="mb-12 flex flex-col items-center justify-between gap-6 rounded-2xl border border-white/10 bg-white/[0.02] p-6 text-center sm:flex-row sm:p-8 sm:text-left">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-brand-bright">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[#d18cff]">
               Get Connected
             </p>
             <h3 className="mt-1 font-display text-[1.4rem] font-extrabold uppercase tracking-[-0.02em] text-white sm:text-[1.7rem]">
@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
             <a
               href="#here"
-              aria-label="FROM HERE — back to top"
+              aria-label="FROM HERE, back to top"
               className="group flex shrink-0 flex-col items-center md:items-start"
             >
               <span className="font-display text-[19px] font-extrabold uppercase leading-none tracking-[-0.02em]">
@@ -125,7 +125,7 @@ export default function Footer() {
 
         {/* copyright & startup attribution */}
         <div className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-8 sm:flex-row">
-          <p className="text-[13px] text-white/40 text-center sm:text-left">
+          <p className="text-[13px] text-white/55 text-center sm:text-left">
             &copy; {new Date().getFullYear()} FROM HERE. All rights reserved.
           </p>
 

@@ -9,7 +9,7 @@ const pillars = [
     index: "02",
     tag: "Build",
     line: "Sharpen your edge.",
-    body: "Hands-on sessions that turn ideas into practical skills — the kind that compound over a career.",
+    body: "Hands-on sessions that turn ideas into practical skills, the kind that compound over a career.",
   },
   {
     index: "03",
@@ -56,8 +56,8 @@ export default function About() {
         {/* top rule + eyebrow */}
         <div className="mb-10 flex items-center gap-5 sm:mb-14">
           <div aria-hidden="true" className="h-px flex-1 bg-gradient-to-r from-white/[0.07] to-transparent" />
-          <p className="shrink-0 text-[11px] font-medium uppercase tracking-[0.28em] text-white/35">
-            About — Why we exist
+          <p className="shrink-0 text-[11px] font-medium uppercase tracking-[0.28em] text-white/50">
+            About · Why we exist
           </p>
           <div aria-hidden="true" className="h-px flex-1 bg-gradient-to-l from-white/[0.07] to-transparent" />
         </div>
@@ -99,18 +99,18 @@ export default function About() {
             {/* running copy */}
             <div className="space-y-4 border-l border-white/[0.08] pl-6 sm:pl-7">
               <p className="text-[clamp(0.92rem,3vw,1.2rem)] font-light leading-[1.7] tracking-[0.005em] text-white/80 sm:text-[clamp(1rem,1.25vw,1.2rem)]">
-                FROM HERE is a conference designed to help young people —
-                especially tertiary students — discover their direction,
+                FROM HERE is a conference designed to help young people,
+                especially tertiary students, discover their direction,
                 develop the skills to pursue it, and connect with the people
                 and opportunities that can move them forward.
               </p>
-              <p className="text-[clamp(0.85rem,2.5vw,1.05rem)] leading-[1.7] text-white/45 sm:text-[clamp(0.9rem,1.1vw,1.05rem)]">
+              <p className="text-[clamp(0.85rem,2.5vw,1.05rem)] leading-[1.7] text-white/55 sm:text-[clamp(0.9rem,1.1vw,1.05rem)]">
                 It brings together students, innovators, founders, tech
                 professionals, mentors, and community leaders from across
                 Nigeria and Africa to exchange ideas, build meaningful
                 connections, and turn potential into progress.
               </p>
-              <p className="text-[clamp(0.85rem,2.5vw,1.05rem)] leading-[1.7] text-white/45 sm:text-[clamp(0.9rem,1.1vw,1.05rem)]">
+              <p className="text-[clamp(0.85rem,2.5vw,1.05rem)] leading-[1.7] text-white/55 sm:text-[clamp(0.9rem,1.1vw,1.05rem)]">
                 The From Here Africa conference takes place on 5 December 2026
                 at the COOU Uli Campus in Uli, Anambra, Nigeria.
               </p>
@@ -133,7 +133,7 @@ export default function About() {
                 Come with questions,
                 ideas, and ambitions.
                 <br className="hidden sm:block" />
-                <span className="text-white/35">
+                <span className="text-white/50">
                   Leave with direction, connections,
                   and the tools to take your next step.
                 </span>
@@ -174,8 +174,8 @@ export default function About() {
 
               {/* tag + arrow row */}
               <div className="flex items-center justify-between">
-                <span className="flex items-center gap-[6px] text-[11px] font-medium uppercase tracking-[0.22em] text-white/30 transition-colors duration-300 group-hover:text-brand-bright/70">
-                  <span aria-hidden="true" className="text-brand-bright/50 group-hover:text-brand-bright">+</span>
+                <span className="flex items-center gap-[6px] text-[11px] font-medium uppercase tracking-[0.22em] text-white/50 transition-colors duration-300 group-hover:text-brand-bright/70">
+                  <span aria-hidden="true" className="text-brand-bright/70 group-hover:text-brand-bright">+</span>
                   {tag}
                 </span>
                 <div className="mt-auto flex items-center gap-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -204,7 +204,7 @@ export default function About() {
               </h3>
 
               {/* body */}
-              <p className="text-[13px] leading-[1.6] text-white/40 transition-colors duration-300 group-hover:text-white/55 sm:text-[14px]">
+              <p className="text-[13px] leading-[1.6] text-white/55 transition-colors duration-300 group-hover:text-white/70 sm:text-[14px]">
                 {body}
               </p>
             </div>
