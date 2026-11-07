@@ -1,5 +1,3 @@
-"use client";
-
 const pillars = [
   {
     index: "01",
